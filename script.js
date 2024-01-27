@@ -1,14 +1,15 @@
 let nob = document.getElementById("No")
 
-nob.addEventListener("mousemove", function () {
+const moveButton = () => {
   let alto = random(1, 10)
   let ancho = random(1, 10)
   console.log(alto, ancho)
   nob.style.gridRow = alto;
   nob.style.gridColumn = ancho;
+}
 
-})
-
+nob.addEventListener("mousemove", moveButton);
+nob.addEventListener("click", moveButton);
 
 function random(min, max) {
   let numero = Math.floor(Math.random() * (max - min + 1) + min)
@@ -17,7 +18,7 @@ function random(min, max) {
 
 let sib = document.getElementById("Si")
 
-sib.addEventListener("click", function () {
+sib.addEventListener("click", () => {
   document.getElementById("p").removeAttribute("hidden")
   console.log("click")
   document.getElementById("1").style.color = "transparent";
