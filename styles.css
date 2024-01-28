@@ -1,24 +1,62 @@
-div {
-  display: flex;
-  flex-direction: column;
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans&display=swap');
+
+body {
+  margin: 0 auto;
+  font-family: "Playpen Sans", cursive;
+}
+
+body, html {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  /* The image used */
+  background-image: url("./assets/olivia-bauso-30UOqDM5QW0-unsplash.jpg");
+
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 1px solid rgba(241, 241, 241, 0.37);
+  border-radius: 12px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 90vw;
+  height: 90vh;
+  padding: 20px;
+  text-align: center;
+  vertical-align: center;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+  grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+  height: 80%;
   align-items: center;
-}
-
-
-h1 {
-  padding: 10px;
-  color: #711DB0;
-}
-
-button {
-  color: brown;
-  width: 80px;
-  height: 40px;
-  border: 3px solid #711DB0;
-  border-radius: 10px;
-  background-color: transparent;
-  font-size: xx-large;
-
+  justify-items: center;
 }
 
 #Si {
@@ -29,32 +67,32 @@ button {
 #No {
   grid-row: 5;
   grid-column: 6;
-
 }
 
-section {
-  display: grid;
-  grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
-  grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
-  width: 1200px;
-  height: 600px;
-  align-items: center;
-  justify-items: center;
-}
+/*div {*/
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*  align-items: center;*/
+/*}*/
 
-body {
-  max-width: 1200px;
-  max-height: 673px;
-  margin: 0 auto;
-  background-image: url(/foto/pngtree-landscapes-wallpaper-images-picture-image_3021437.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+/*div.bg-image {*/
+/*  !* The image used *!*/
+/*  background-image: url("./assets/olivia-bauso-30UOqDM5QW0-unsplash.jpg");*/
 
-}
+/*  !* Add the blur effect *!*/
+/*  filter: blur(8px);*/
+/*  -webkit-filter: blur(8px);*/
 
-p {
-  font-size: xx-large;
-  justify-content: center;
-  color: pink;
-}
+/*  !* Full height *!*/
+/*  height: 100%;*/
+/*  z-index: 100;*/
+
+/*  !* Center and scale the image nicely *!*/
+/*  background-position: center;*/
+/*  background-repeat: no-repeat;*/
+/*  background-size: cover;*/
+/*}*/
+
+
+
+
